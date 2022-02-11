@@ -1,0 +1,121 @@
+.title{
+  color: #848484;
+    font-size: 20px;
+    text-align: center;
+    font-family: monospace;
+    position: relative;
+    top: 30%;
+}
+.display {
+    color: #ffffff;
+    font-size: 3rem;
+    font-family: monospace;
+    text-align: center;
+    position: relative;
+    top: 60%;
+}
+.clock
+{
+    background: #212121;
+    border: 10px solid #313131;
+    border-radius: 50%;
+    box-sizing: border-box;
+    height:300px;
+    margin: 0 auto;
+    position: relative;
+    width: 300px;
+}
+.twelve,
+.three,
+.six,
+.nine
+{
+    background: #fff;
+    position: absolute;
+}
+.twelve,
+.six
+{
+    height: 10px;
+    width: 4px;
+}
+.three,
+.nine
+{
+    height: 4px;
+    width: 10px;
+}
+.twelve
+{
+    left: 50%;
+    top: -1px;
+}
+.three
+{
+    right: -1px;
+    top: 50%;
+}
+.six
+{
+    left: 50%;
+    bottom: -1px;
+}
+.nine
+{
+    left: -1px;
+    top: 50%;
+}
+.hour
+{
+    height: 60px;
+    width: 4px;
+    background: #c2c2c2;
+    position: absolute;
+    left: 50%;
+    top: 80px;
+    animation: tick 43200s infinite linear;
+    -webkit-animation: tick 43200s infinite linear;
+    /* transform: rotate(calc(var(--h) * 360 / 12));
+    -webkit-transform: rotate(calc(var(--h) * 360 / 12)); */
+}
+.minute
+{
+    height: 100px;
+    width: 4px;
+    background: #777;
+    position: absolute;
+    left: 50%;
+    top: 40px;
+    animation: tick 3600s infinite linear;
+    -webkit-animation: tick 3600s infinite linear;
+    /* transform: rotate(calc(attr(data-min, 1) * 36 / 6));
+    -webkit-transform: rotate(calc(attr(data-min, 1) * 36 / 6)); */
+}
+.second
+{
+    height: 120px;
+    width: 4px;
+    background: #FC0505;
+    position: absolute;
+    left: 50%;
+    top: 20px;
+    animation: tick 60s infinite linear;
+    -webkit-animation: tick 60s infinite linear;
+    /* transform: rotate(calc(attr(data-sec, 1) * 36 / 6));
+    -webkit-transform: rotate(calc(attr(data-sec, 1) * 36 / 6)); */
+}
+.hour, .minute, .second
+{
+    transform-origin: 2px 100%;
+    -webkit-transform-origin: 2px 100%;
+}
+@keyframes tick {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes tick {
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
