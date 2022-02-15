@@ -18,3 +18,13 @@
 - [ ] React Router
 
 - [ ] Webpack setup
+- [ ] Create a Bundle
+- [ ] Modules
+- [ ] Assets Managment
+- [ ] Output Managment
+- [ ] Code Splitting
+- [ ] Caching
+
+- [ ] React hooks
+- [ ] Context API
+- [ ] Redux
