@@ -33,7 +33,7 @@ function HomeBody() {
    * @param {object} e - The event which contains the timezone of the clock to be deleted.
    */
   const handleDelete = (timezone) => () => {
-    dispatch({ type: "ADD_CLOCK", payload: { timezone }});
+    dispatch({ type: "DELETE_CLOCK", payload: { timezone }});
   };
 
   /**
