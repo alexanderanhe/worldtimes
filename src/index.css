@@ -7,10 +7,3 @@ html {
   font-size: 62.5%;
   background-color: #171717;
 }
-select {
-  height: 50px;
-  width: 200px;
-  margin: 0 auto;
-  display: block;
-  margin-bottom: 30px;
-}

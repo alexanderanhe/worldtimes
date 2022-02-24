@@ -11,20 +11,12 @@
 - [*] Styling React components
 - [*] Debugging React Apps
 
-- [ ] Working with refs
-- [ ] Reducers
+- [*] Working with refs
+- [*] Reducers
 - [*] HTTP request
-- [ ] Forms
-- [ ] React Router
+- [*] Forms
+- [*] React Router
 
-- [ ] Webpack setup
-- [ ] Create a Bundle
-- [ ] Modules
-- [ ] Assets Managment
-- [ ] Output Managment
-- [ ] Code Splitting
-- [ ] Caching
-
-- [ ] React hooks
-- [ ] Context API
+- [*] React hooks
+- [*] Context API
 - [ ] Redux

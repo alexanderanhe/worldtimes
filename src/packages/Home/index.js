@@ -1,5 +1,6 @@
 import React from "react";
-
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import ClockItem from "../../lib/components/ClockItem";
 import { HomeBody } from "./../../lib/components";
 
 /**
@@ -7,7 +8,14 @@ import { HomeBody } from "./../../lib/components";
  * @returns {JSX.Element}
  */
 const Home = () => {
-    return <HomeBody />
+    return (
+        <Router>
+            <Routes>
+                <Route exact path="/" element={<HomeBody />} />
+                <Route exact path="/region/:region" element={<ClockItem />} />
+            </Routes>
+        </Router>
+    )
 };
 
 export default Home;
